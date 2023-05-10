@@ -16,4 +16,17 @@ Alter 13-17 // Cola
 
 /* Getränke-Challenge */
 
+let name = prompt ("Bitte geben Sie Ihren Namen ein:");
+let age = parseInt(prompt ("Bitte geben Sie Ihr Alter ein:"));
 
+if (age >= 0 && age <= 5) {
+    console.log(name + " trinkt Milch.");
+  } else if (age >= 6 && age <= 12) {
+    console.log(name + " trinkt Saft.");
+  } else if (age >= 13 && age <= 17) {
+    console.log(name + " trinkt Cola.");
+  } else if (age >= 18) {
+    console.log(name + " trinkt Wein.");
+  } else {
+    console.log("Ungültiges Alter.");
+  }
